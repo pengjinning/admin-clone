@@ -1,0 +1,62 @@
+{
+  "manifest_version": 3,
+  "name": "Admin Clone Extension",
+  "description": "Analyze and clone admin dashboard UI to React + Antd + Vite projects",
+  "version": "0.1.0",
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "tabs",
+    "sidePanel",
+    "contextMenus"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icons/icon16.png",
+      "32": "assets/icons/icon32.png",
+      "48": "assets/icons/icon48.png",
+      "128": "assets/icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icons/icon16.png",
+    "32": "assets/icons/icon32.png",
+    "48": "assets/icons/icon48.png",
+    "128": "assets/icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "service-worker-loader.js",
+    "type": "module"
+  },
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "content_scripts": [
+    {
+      "js": [
+        "assets/index.ts-loader-BSNOrycC.js"
+      ],
+      "matches": [
+        "<all_urls>"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "resources": [
+        "assets/*",
+        "assets/dom-utils-DQVJ0pwT.js",
+        "assets/dom-utils-DQVJ0pwT.js.map",
+        "assets/index.ts-BSDF9_CD.js",
+        "assets/index.ts-BSDF9_CD.js.map"
+      ],
+      "use_dynamic_url": false
+    }
+  ]
+}

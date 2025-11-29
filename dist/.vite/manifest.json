@@ -1,0 +1,65 @@
+{
+  "../../../../../../../@crx/manifest": {
+    "file": "assets/crx-manifest.js-DRGySssA.js",
+    "name": "crx-manifest.js",
+    "src": "../../../../../../../@crx/manifest",
+    "isEntry": true
+  },
+  "_dom-utils-DQVJ0pwT.js": {
+    "file": "assets/dom-utils-DQVJ0pwT.js",
+    "name": "dom-utils"
+  },
+  "_index-!~{004}~.js": {
+    "file": "assets/index-BvDFcoBW.css",
+    "src": "_index-!~{004}~.js"
+  },
+  "_index-3ljul4ma.js": {
+    "file": "assets/index-3ljul4ma.js",
+    "name": "index",
+    "imports": [
+      "_dom-utils-DQVJ0pwT.js"
+    ],
+    "css": [
+      "assets/index-BvDFcoBW.css"
+    ]
+  },
+  "index.ts-loader.js": {
+    "file": "assets/index.ts-loader-BSNOrycC.js",
+    "src": "index.ts-loader.js"
+  },
+  "popup.html": {
+    "file": "assets/popup-BePt1NAd.js",
+    "name": "popup",
+    "src": "popup.html",
+    "isEntry": true,
+    "imports": [
+      "_index-3ljul4ma.js",
+      "_dom-utils-DQVJ0pwT.js"
+    ]
+  },
+  "sidepanel.html": {
+    "file": "assets/sidepanel-DRZpAucZ.js",
+    "name": "sidepanel",
+    "src": "sidepanel.html",
+    "isEntry": true,
+    "imports": [
+      "_index-3ljul4ma.js",
+      "_dom-utils-DQVJ0pwT.js"
+    ]
+  },
+  "src/background/index.ts": {
+    "file": "assets/index.ts-D1MaUVcl.js",
+    "name": "index.ts",
+    "src": "src/background/index.ts",
+    "isEntry": true
+  },
+  "src/content-scripts/index.ts": {
+    "file": "assets/index.ts-BSDF9_CD.js",
+    "name": "index.ts",
+    "src": "src/content-scripts/index.ts",
+    "isEntry": true,
+    "imports": [
+      "_dom-utils-DQVJ0pwT.js"
+    ]
+  }
+}
